@@ -28,3 +28,8 @@ footer p{
   display: inline;
   list-style-type: none;
 }
+
+#map {
+  width: 400px;
+  height: 300px;
+}
