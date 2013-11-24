@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" ng-app="fantasyApp">
+  <head>
+    <meta charset="utf-8">
+    <title>My AngularJS App</title>
+    <link rel="stylesheet" href="app/css/app.css"/>
+    <link rel="stylesheet" href="app/lib/bootstrap/docs/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="app/lib/bootstrap/docs/assets/css/bootstrap-responsive.css" />
+  </head>
+  <body>
+
+    <section class="content">
+      <section class="container">
+        <div id="map"></div>
+        <form name="needForm" ng-controller="NeedCtrl">
+          <input name="need" ng-model="need"/><input type="submit" ng-click="save()" value="Save" />
+        </form>
+      </section>
+    </section>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="http://static.firebase.com/v0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
+    <script src="app/lib/angular/angular.js"></script>
+    <script src="https://rawgithub.com/arunisrael/angularjs-geolocation/master/dist/angularjs-geolocation.min.js"></script>
+    <script src="app/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="app/lib/angular-route/angular-route.min.js"></script>
+    <script src="app/lib/angular-fire/angularFire.js"></script>
+    <script src="app/lib/mapstraction/mxn.js?(googlev3)"></script>
+    <script src="app/lib/mapstraction/mxn.core.js"></script>
+    <script src="app/lib/mapstraction/mxn.googlev3.core.js"></script>
+    <script src="app/js/app.js"></script>
+    <script src="app/js/config.js"></script>
+    <script src="app/js/controllers/headercontroller.js"></script>
+    <script src="app/js/controllers/signincontroller.js"></script>
+    <script src="app/js/controllers/signupcontroller.js"></script>
+    <script src="app/js/controllers/needcontroller.js"></script>
+    <script src="app/js/services/loginservice.js"></script>
+    <script src="app/js/services/needservice.js"></script>
+    <script src="app/js/services/profilecreator.js"></script>
+  </body>
+</html>
